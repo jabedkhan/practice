@@ -1,0 +1,256 @@
+/* Defult CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfixed::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.fixedwidth{
+    width: 1270px;
+    margin: auto;
+}
+
+.about-section{
+    margin: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-section h1{
+    font-size: 40px;
+    color: rgb(107, 106, 106);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.about-section p {
+    width: 800px;
+    line-height: 25px;
+    margin: auto;
+    color: rgb(107, 106, 106);
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+/* CSS Start */
+
+/* Header */
+
+.header-section{
+    background-color: #8c7ae6;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    line-height: 43px;
+}
+.main-menu{
+    width: 70%;
+    float: right;
+}
+.main-menu ul{
+    text-align: right;
+}
+.main-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.main-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 0 20px;
+    line-height: 53px;
+    font-size: 22px;
+    transition: .5s;
+}
+.main-menu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.main-menu ul li a:hover{
+    background-color: #40739e;
+}
+
+/* Banner */
+
+.banner-section{
+    background: url(https://lh3.googleusercontent.com/proxy/zDptl5M6qT_SXVCTmGerzSuRZFfCwj28Ru5tcSx3-45k8FaHfZIQ3j19OiO7k-LVemv0h5UtuJcMzhp2cAsnTkJ5JxDKtW_okr5zPuBihQX0HIZMPL4f) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 220px 0;
+    color: white;
+}
+.content h2{
+    background: rgba(53, 59, 72, .4);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.content h1{
+    background: rgba(72, 52, 212, .6);
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 40px;   
+}
+.content span a{
+    text-decoration: none;
+    display: inline-block;
+    background: #e056fd;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.content span a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #686de0;
+    border-radius: 5px 0 0 5px;
+    z-index: -1;
+    transition: .6s;
+}
+.content span a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #686de0;
+    border-radius: 0 5px 5px 0;
+    z-index: -1;
+    transition: .6s;
+}
+.content span a:hover::before, .content span a:hover::after{
+    width: 50.1%;
+}
+
+/* Service Section */
+
+.service-section{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.service {
+    width: 25%;
+    float: left;
+    border: 1px solid rgba(31, 30, 30, .6);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 4%;
+    padding: 30px 0;
+    box-shadow: 0 0 20px rgb(68, 68, 68);
+    transition: .7s;
+}
+.service:hover{
+    transform: scale(1.05);
+}
+.service span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px 0;
+    background-color: #D980FA;
+}
+.service h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.service ul{
+    list-style: none;
+}
+
+/* Blog Section  */
+
+.blog-left{
+    float: left;
+    width: 70%;
+}
+.blog{
+    margin-bottom: 30px;
+}
+.blog img{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+/* Blog Notice */
+
+.notice{
+    float: right;
+    width: 25%;
+}
+.notice h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
+}
+.notice ul li {
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 28px;
+    margin: 15px 0;
+}
+
+/* Footer Section */
+
+.footer{
+    background-color: #0dbf9b;
+}
+.footer-left{
+    width:60%;
+    float: left;
+    line-height: 50px;
+}
+.footer-right-menu{
+    width: 40%;
+    float: right;
+}
+.footer-right-menu ul{
+    text-align: center;
+    list-style: none;
+}
+.footer-right-menu ul li{
+    display: inline-block;
+}
+.footer-right-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    margin-right: 20px;
+}
